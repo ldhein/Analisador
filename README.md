@@ -1,9 +1,29 @@
-## Analisador lexico sintático utilizando Flex/Bison e C. 
-Esse analisador é capaz de reconher a declaração de uma variavel em linguagem C (dentro dos conformes da linguagem) e o seu tipo (int,float,char). É possível também reconhecer listas de declaraçãoes como por exemplo: int var1,var2,var3;
-Para compilar e criar os arquivos necessários é preciso executar os seguintes comandos no terminal:
+# Analisador lexico sintático utilizando Flex/Bison.
+Analisador simples para reconhecimento de declarações de variaveis pertencentes à linguagem C. É possível fazer multiplas delcarações e declarações de arrays. Para que as sentenças seja validadas elas devem seguir a seguinte sintaxe:
+
+  - Declarar o tipo (int,float ou char)
+  - Declarar o nome da variavel (de acordo com os padrões do C)
+  - Finalizar com o cracter ponto e virgula (;). Para mais uma multipla declaração use virgula e por fim o ;
+
+# Exemplos
+```c
+int teste1,_teste,t3ste;
+float teste;
+char teste[3];
 ```
-$ flex lex.l
-$ bison -d y.y
-$ gcc y.tab.c lex.yy.c -o lex -lm
-$ ./lex
+
+### Installation
+
+Requer Flex ou Lex e Bison ou Yacc
+
+```sh
+$ lex sposv.l
+$ yacc -d spovs.y
+$ gcc lex.yy.c y.tab.c -o analisador
+$ ./analisador
 ```
+
+
+#### Vídeo referência
+
+See [YACC Specification program for Variable Declaration](https://www.youtube.com/watch?v=DVohJ4nljhg)
