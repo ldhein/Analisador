@@ -1,8 +1,12 @@
+# Trabalho academico.
+[link do trabalho](https://drive.google.com/file/d/1EB6Qi98cv0MagDmq8j7_QyoinslnqPxF/edit)
+
 # Analisador lexico sintático utilizando Flex/Bison.
 Analisador simples para reconhecimento de declarações de variáveis pertencentes à linguagem C. É possível fazer múltiplas declarações e declarações de arrays. Para que as sentenças sejam validadas elas devem seguir a seguinte sintaxe:
 
   - Declarar o tipo (int,float ou char)
   - Declarar o nome da variável (de acordo com os padrões do C)
+  - Reconhece comandos simples de if em uma linha só (if(<condição>){<comandos>}
   - Finalizar com o cracter ponto e vírgula (;). Para mais uma declaração use vírgula e por fim o ;
 
 # Exemplos
