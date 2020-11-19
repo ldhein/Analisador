@@ -1,6 +1,3 @@
-/*Lucas Dhein*/
-/*Definição do scanner Léxico.*/
-/*Esse analisador foi feito e compilado em ambiente linux!*/
 %{
 #include "y.tab.h"
 %}
