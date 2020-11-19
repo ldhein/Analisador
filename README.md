@@ -6,7 +6,7 @@ Analisador simples para reconhecimento de declarações de variáveis pertencent
 
   - Declarar o tipo (int,float ou char)
   - Declarar o nome da variável (de acordo com os padrões do C)
-  - Reconhece comandos simples de if em uma linha só (if(<condição>){<comandos>}
+  - Reconhece comandos simples de if em uma linha só. if(<condição>){<comandos>}
   - Finalizar com o cracter ponto e vírgula (;). Para mais uma declaração use vírgula e por fim o ;
 
 # Exemplos
@@ -14,6 +14,7 @@ Analisador simples para reconhecimento de declarações de variáveis pertencent
 int teste1,_teste,t3ste;
 float teste;
 char teste[3];
+if(var1>var2){var1 += var2;}
 ```
 
 ### Installation
