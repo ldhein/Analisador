@@ -25,10 +25,13 @@
 start:
     BUILTIN varlist SC
     | BUILTIN ID OPEN_SQ DIGIT CLOSE_SQ SC
-    | varlist: varlist COMMA ID | ID
     | IF OPEN_PARENT condition CLOSE_PARENT OPEN_BRACE commands CLOSE_BRACE opt_else
     ;
-
+varlist: 
+    varlist COMMA ID 
+    | ID
+    ;
+    
 opt_else:
         |ELSE OPEN_BRACE commands CLOSE_BRACE
         ;
